@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+calender_task_data_id,sec_app.calender_task_data_id,calendar.model_calendar_event,sec_app.group_c_user,1,1,1,0
+calender_task_data_id_1,sec_app.calender_task_data_id_1,calendar.model_calendar_event,sec_app.group_c_attendee,1,0,1,0
+calender_task_data_id_2,sec_app.calender_task_data_id_2,calendar.model_calendar_event,sec_app.group_c_manager,1,1,1,1

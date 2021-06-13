@@ -1,0 +1,77 @@
+---todo
+	-- add so refernce to following field - type - char
+		- res.partner
+		- sale.order
+		- account.move
+	-- add compute/on_change on sale.order and account.move - working
+		- based upon selected customer - show so_reference
+		- if user modify that so_reference from sale.order,account.move that should not affect into sale.order 		
+
+
+
+example
+ comp . - 1 
+		- contact
+			 - 2
+			 - 3
+			 - 5				 				
+
+user - sale.order
+		- customer - 2
+			if not customer.so_refence : #user dj
+				#own so_ref
+			else:
+				 #if rec has someone child:  #2,3,5
+				 	#child_ids
+				 	#parent no so_ref	
+				 #else # 1
+				    ''	
+
+
+				  #if
+				  rec = self.env['res.partner'].search([manyone.id,'in','child_ids'])
+				  if not rec:
+				  		rec.id
+
+
+steps :-
+	1.if - is not so_ref blank - true
+			- set rec.so_ref = many2one.so_ref
+	2.else
+		- if is it someonechild - true
+			- search by many2onefield in one2manyfield
+		- if is it not		
+
+
+
+
+
+
+
+
+
+
+
+
+# browse[(partner_id.partner_id)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
